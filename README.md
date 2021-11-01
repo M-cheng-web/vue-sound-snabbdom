@@ -271,3 +271,6 @@ newCh = [
 19. 发现 oldStartIdx <= oldEndIdx, 也就是旧节点数组还没有处理完,但是新节点数组处理完了
 20. 这就代表旧节点数组从 oldStartIdx开始到 oldEndIdx 的节点都要删除
 21. 遍历删除,然后结果就变成了 [E, C, M], 中间只新建了M这个真实DOM,精彩!!!!
+
+## 流程图
+![DIFF算法流程图](https://gitee.com/M-cheng-web/map-storage/raw/master/vue-img/diff%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
