@@ -1,4 +1,4 @@
-import createElement from "./createElement";
+import createElement from "./createElement.js";
 import updateChildren from './updateChildren.js';
 
 // 对比同一个虚拟节点

@@ -84,10 +84,12 @@ let oldEndVnode = oldCh[oldEndIdx]; // 旧后节点
 let newStartVnode = newCh[0]; // 新前节点
 let newEndVnode = newCh[newEndIdx]; // 新后节点
 ```
+
 2. 创建keyMap对象(在四种情况都没有命中的情况下会用到)
 ``` js
 let keyMap = null;
 ```
+
 3. 设置while(新前<=新后&&旧前<=就后){} 开始循环遍历!
 ``` js
 while (oldStartIdx <= oldEndIdx && newStartIdx <= newEndIdx) {
@@ -163,6 +165,7 @@ while (oldStartIdx <= oldEndIdx && newStartIdx <= newEndIdx) {
   }
 }
 ```
+
 4. 在while 循环后要再判断一下是否需要删除或者批量新增的
 ``` js
 // 继续看看有没有剩余的。循环结束了start还是比old小
