@@ -112,7 +112,7 @@ export default function updateChildren(parentElm, oldCh, newCh) {
     for (let i = newStartIdx; i <= newEndIdx; i++) {
       // insertBefore方法可以自动识别null，如果是null就会自动排到队尾去。和appendChild是一致了。
       // newCh[i]现在还没有真正的DOM，所以要调用createElement()函数变为DOM
-      parentElm.insertBefore(createElement(newCh[i]), oldCh[oldStartIdx].elm);
+      parentElm.insertBefore(createElement(newCh[i]), oldCh[oldStartIdx] ? oldCh[oldStartIdx].elm : null );
     }
   } else if (oldStartIdx <= oldEndIdx) {
     console.log('old还有剩余节点没有处理，要删除项');
